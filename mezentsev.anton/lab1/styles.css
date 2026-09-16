@@ -6,26 +6,23 @@ body {
 /* Контейнер сетки */
 .layout {
   display: grid;
-  /* Две колонки: сайдбар 300px, контент занимает остальное */
-  grid-template-columns: 300px 1fr;
-  /* Четыре строки: шапка, контент+сайдбар, подвал */
-  grid-template-rows: auto 1fr auto;
-  /* Области сетки */
-  grid-template-areas:
-    'header header'
-    'sidebar content'
-    'footer footer';
-  min-height: 100vh; /* На всю высоту экрана */
+  /* Используем сокращенное свойство grid-template для соответствия stylelint */
+  grid-template:
+    "header header" auto
+    "sidebar content" 1fr
+    "footer footer" auto
+    / 300px 1fr;
+  min-height: 100vh;
 }
 
-/* Общие стили для всех блоков макета */
+/* Общие стили блоков */
 .header,
 .sidebar,
 .content,
 .footer {
-  border: 1px solid black; /* Черная рамка 1px */
+  border: 1px solid black;
   padding: 20px;
-  box-sizing: border-box; /* Чтобы padding не увеличивал размер блока */
+  box-sizing: border-box;
 }
 
 .header {
@@ -46,6 +43,6 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #f0e68c;
+  background-color: #f5f5dc;
   text-align: center;
 }
