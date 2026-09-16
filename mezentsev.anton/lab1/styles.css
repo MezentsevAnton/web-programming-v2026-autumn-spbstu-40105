@@ -8,9 +8,9 @@ body {
   display: grid;
   /* Используем сокращенное свойство grid-template для соответствия stylelint */
   grid-template:
-    "header header" auto
-    "sidebar content" 1fr
-    "footer footer" auto
+    'header header' auto
+    'sidebar content' 1fr
+    'footer footer' auto
     / 300px 1fr;
   min-height: 100vh;
 }
