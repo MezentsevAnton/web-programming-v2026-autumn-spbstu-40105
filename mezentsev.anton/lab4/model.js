@@ -23,7 +23,9 @@ function groupBy(movies, getKey) {
   const groups = new Map();
   for (const movie of movies) {
     const key = getKey(movie);
-    if (!groups.has(key)) groups.set(key, []);
+    if (!groups.has(key)) {
+      groups.set(key, []);
+    }
     groups.get(key).push(movie);
   }
   return groups;
