@@ -110,6 +110,10 @@ h2 {
   padding: 0;
 }
 
+.tree-node {
+  min-width: 0;
+}
+
 .tree > .tree-node + .tree-node {
   border-top: 1px solid #dce3da;
   padding-top: 10px;
@@ -120,10 +124,6 @@ h2 {
   margin-left: 18px;
   padding-left: 16px;
   border-left: 1px solid #d8e0d7;
-}
-
-.tree-node {
-  min-width: 0;
 }
 
 .branch-toggle {
