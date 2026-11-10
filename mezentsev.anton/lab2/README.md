@@ -29,36 +29,4 @@
 
 ## Запуск
 
-Используйте Node.js 24.19.0, указанный в README курса. Разместите папку `lab2` в
-своём каталоге `surname.name` репозитория курса. Замените `surname.name` своей
-фамилией и именем латиницей в нижнем регистре. Отдельный `package.json` внутри
-`lab2` не нужен.
-
-Перейдите в каталог лабораторной и выполните:
-
-```bash
-node --input-type=module -e "import { calculateExpression } from './solution.js'; console.log(calculateExpression('2 + 3 * 4'));"
-```
-
-Ожидаемый результат: `14`.
-
-Примеры вызовов после импорта функции:
-
-```js
-calculateExpression('2 + 3 * 4'); // 14
-calculateExpression('(2 + 3) * 4'); // 20
-calculateExpression('10 - 8 / 2'); // 6
-calculateExpression('-5 + 2 * 3'); // 1
-calculateExpression('1.5 * 4 + 2'); // 8
-```
-
-Из корня репозитория курса запустите проверки:
-
-```bash
-npm run format -- surname.name/lab2
-npm run format:check -- surname.name/lab2
-npm run lint:js -- surname.name/lab2
-```
-
-Название отдельного pull request для этой работы:
-`[TASK-2] variant_28 surname.name`.
+Импортируйте именованный export из solution.js как ES module.
