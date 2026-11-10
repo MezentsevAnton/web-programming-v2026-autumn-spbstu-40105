@@ -74,7 +74,9 @@ export function buildTree(items, level = 0, path = []) {
   const groups = new Map();
   for (const book of items) {
     const key = book[fields[level]];
-    if (!groups.has(key)) groups.set(key, []);
+    if (!groups.has(key)) {
+      groups.set(key, []);
+    }
     groups.get(key).push(book);
   }
   return [...groups].map(([label, group]) => {
