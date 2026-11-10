@@ -49,13 +49,6 @@
 
 ## Запуск
 
-Поместите папку `lab4` в каталог `surname.name` репозитория курса, заменив
-`surname.name` своей фамилией и именем латиницей в нижнем регистре.
-`package.json` внутри лабораторной не требуется.
-
-Откройте `index.html` через расширение Live Server в VS Code. Другой способ,
-если установлен Python: перейдите в каталог `lab4` и выполните:
-
 ```bash
 python -m http.server 8000
 ```
@@ -70,15 +63,3 @@ python -m http.server 8000
 3. Проверьте варианты обзора коллекции и поиск по полному имени актёра.
 4. Перезагрузите страницу: фильм и актёры должны сохраниться.
 5. Удалите актёра, затем фильм и снова перезагрузите страницу.
-
-Из корня репозитория курса выполните:
-
-```bash
-npm run format -- surname.name/lab4
-npm run format:check -- surname.name/lab4
-npm run lint:js -- surname.name/lab4
-npm run lint:css -- "surname.name/lab4/**/*.css"
-npm run lint:html -- "surname.name/lab4/**/*.html"
-```
-
-Название отдельного PR: `[TASK-4] variant_28 surname.name`.
